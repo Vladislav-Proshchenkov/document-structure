@@ -27,7 +27,7 @@ products.forEach(product => {
             cartProductCount.textContent = Number(cartProductCount.textContent) + Number(count);
             return;
         }
-        const cartProduct = document.createElement('div');      
+        const cartProduct = document.createElement('div');     
         cartProduct.classList.add('cart__product');
         cartProduct.setAttribute('data-id', id);
         const cartProductImage = document.createElement('img');

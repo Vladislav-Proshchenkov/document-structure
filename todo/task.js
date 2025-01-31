@@ -5,6 +5,9 @@ const tasksAdd = document.getElementById('tasks__add');
 
 tasksAdd.addEventListener('click', (elem) => {
     elem.preventDefault();
+    if (taskInput.value === '') {
+        return;
+    }
     const task = document.createElement('div');
     task.classList.add('task');
     task.innerHTML = 
